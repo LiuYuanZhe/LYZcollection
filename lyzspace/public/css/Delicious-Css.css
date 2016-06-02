@@ -1,0 +1,94 @@
+body{
+				margin: 0px;padding: 0px;
+				background: beige;
+			}
+			h{
+				margin: 10px 10px;
+			}
+			.kuaizi{
+				width: 80px;height: 80px;right: 30px;top: 20px;position: absolute;
+			}
+			.kuaizi:hover{
+				transform: rotate(45deg);transition: 0.5s;
+			}
+			.circle1{
+				
+				stroke: #656565;
+			}
+			.CaiPinNeiRong{
+				/*background: lightskyblue;width: 100%;*/
+				margin-top: 60px;
+				/*background: url(../img/c30.jpg) repeat;background-attachment: fixed;*/
+			}
+		
+			.Small_Picture{
+				width: 1100px;height: 130px;position: relative;
+				margin-left: 138px;
+			}
+			.Small_Picture ul{
+				list-style: none;position: absolute;left: 37px;top:20px;visibility: hidden;
+			}
+			.Small_Picture li{
+				cursor: pointer;float: left;margin-right: 24px;
+			}
+			.Small_Picture img{
+				width: 180px;height: 120px;opacity: 0.8;
+			}
+			.Small_Picture:hover img{
+				width: 180px;height: 120px;opacity: 1;
+			}
+			.picture_wall{
+				position: relative;border:1px red solid;
+			}
+			table{
+				font-style: italic;opacity: 1;
+				margin: 10px; color: white;border-radius:5em ;border: 1px solid white;
+				
+			}
+			table tr{
+				margin-top: 10px;padding-top: 10px;
+			}
+			*{margin: 0;padding: 0;}
+			/*标签布局*/
+			/*#div_label{height: 80px;width: 100%;position: fixed;background: white;z-index: 1;background: lightseagreen;}
+			#img_lable{height: 80px;width: auto;position: absolute;margin: auto;}*/
+			
+			/*视频餐具布局*/
+			.
+			#video_tool{height: 300px;width: 95%;margin: auto;margin-top: 80px;}
+			#video_tool_video{height: 250px;width:22%;margin-top: 25px;border: 2px solid white;
+			float: left;margin-left: 2%;margin-right: 3%;float: left;}
+			.video_tool_tool{height: 230px;width:230px;float: left;margin-left: 2%;margin-right: 2%;margin-top: 35px;position: relative;
+			}
+			.video_tool_pic_text{height: 460px;width:230px;position: absolute;}
+			.video_tool_tool_pic{height: 230px;width:230px;}
+			.video_tool_tool_text{height: 230px;width:230px;bottom: 0;font-size: 14px;font-family: "新宋体"; color: white;font-weight: bold;}
+			#vedio_1{height: auto;width: 100%;margin-top: 20%;}
+			.video_tool_img{height: 230px;width: 230px;border: 2px solid beige; border-radius: 1em;}
+			
+			/*当季水果蔬菜布局*/
+			#vagetable{height: 300px;width: 95%;margin: auto;}
+			#vagetable_1{height: 240px;width: 960px;margin:20px auto;position: relative;overflow: hidden;}
+			#vagetable_1 ul li img{height: 240px;width: auto; float: left;margin: 0;padding: 0;}
+			#vagetable_1_ul {position: absolute;left: 0;top: 0;width: 1920px;}
+			#vagetable_1 ul li{height: 240px;width: 240px;list-style: none;float: left;}
+			
+			#video_2{
+				margin-top: 80px;
+			}
+			/*footer*/
+			footer{
+				position: fixed;bottom:0px;z-index: 5;background: url(../img/footer.png)repeat;
+				opacity: 0.5;width: 500px;height: 30px;line-height: 30px;
+			}
+			.bottomLi{
+				float: left;list-style: none;cursor: pointer;
+				color: white;font-family: "黑体";margin-left: 10px;
+			}
+			.bottomLi1{
+				float: right;
+			}	
+			.turnTop{
+				color: white;font-family: "黑体";
+			}
+		

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Delicious-Css.css">
+	<style>
+		a:focus{
+			outline: none;
+		}
+		#myCarousel{
+			width: 120%;
+			height:auto;
+		}
+		#jumbotron1{
+			height:600px;
+			background:url(img/bg/fond-livre.jpg) no-repeat; 
+			background-attachment:fixed;
+			background-size:cover;
+		}
+		#lunbo-left{
+			margin-right: -50px;
+		}
+		#head_video{
+			top: -20px;left: -70px;
+			position: relative;
+		}
+		#video_2{
+			border-radius:1em;
+			border-color: transparent;
+			border:2px solid white;
+			width: 105%; height: auto;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<nav id="navbartop" class="navbar navbar-default navbar-info navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse js-navbar-scrollyspy" id="myScrolllspy">
+				<ul class="nav nav-pills nav-justified" role="tablist">
+					<li role="presentation"><a href="#">@iwen</a></li>
+					<li role="presentation"><a href="#">@ime</a></li>
+					<li role="presentation"><a href="#">aaaaa</a></li>
+				</ul>
+				<div class="kuaizi">
+					<svg width="100%" height="100%">
+						<line x1='10' y1='2' x2='65' y2='60' style='stroke: #930000;stroke-width:4;'></line>
+						<line x1='2' y1='10' x2='60' y2='65' style='stroke: #930000;stroke-width:4;'></line>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div id="jumbotron1" class="jumbotron" style="">
+		<div class="container img-rounded" >
+			<h1 style="color:white;">Hello,Welcome</h1>
+			<h3 style="color:white;">
+			Welcome to come our station<br>
+			欢迎来到美食小站，希望您在这里获得更多的知识，丰富自己，充实生活<br>
+			</h3><br><br>
+			<p><a href="" class="btn btn-info btn-lg" role="button">learn more</a></p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col-md-6" id="lunbo_left">
+			<div class="" id="head_video">
+				<video style="" id="video_2" controls="controls"loop="loop" src="video/headmp4.mp4">
+				</video>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="">
+				<div style="" id="myCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active"><img class="img-rounded" src="img/food1.jpg" alt=""></div>
+						<div class="item"><img class="img-rounded" src="img/food2.jpg" alt=""></div>
+						<div class="item"><img class="img-rounded" src="img/food3.jpg" alt=""></div>
+						<div class="item"><img class="img-rounded" src="img/food4.jpg" alt=""></div>
+					</div>
+					
+					<a style="opacity:0;" href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+					<a style="opacity:0;" href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<ul class="media-list">
+			<li class="media">
+				<a href="" class="media-left"></a>
+				<div class="media-body">
+					
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="col-md-3">
+			<video  id="vedio_1" controls="controls" autoplay="autoplay" loop="loop" src="video/video_food.mp4">
+
+			</video>
+		</div>
+		<div class="col-md-3">
+			<img class="video_tool_img" src="img/厨具1.jpg" />
+		</div>
+		<div class="col-md-3">
+			<img class="video_tool_img" src="img/厨具2.jpg" />
+		</div>
+		<div class="col-md-3">
+			<img class="video_tool_img" src="img/厨具3.jpg" />
+		</div>
+	</div>
+	<div class="container">
+		<div id="vagetable">
+			<div id="vagetable_1">
+				<ul id="vagetable_1_ul">
+					<li ><img src="img/vegetable/1.jpg" /></li>
+					<li ><img src="img/vegetable/2.jpg" /></li>
+					<li ><img src="img/vegetable/3.jpg" /></li>
+					<li ><img src="img/vegetable/4.jpg" /></li>
+					<li ><img src="img/vegetable/5.jpg" /></li>
+					<li ><img src="img/vegetable/6.jpg" /></li>
+					<li ><img src="img/vegetable/7.jpg" /></li>
+					<li ><img src="img/vegetable/8.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-2.2.3.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/move.js"></script>
+	<script>
+		$(window).ready(function () {
+			AllWidth();
+
+			//底部录播-----------------------------------------------------------------
+			Scroll_Vegetable();
+			var aDiv_video_tool_pic_text = $('video_tool_pic_text');
+			for(var i=0;i<aDiv_video_tool_pic_text.length;i++){
+				video_tool_pic_text[i].timer = null;
+			}
+			//-------------------------------------------------------------------------
+
+		});
+		function AllWidth() {
+			var width = $(document.body).width();
+			var height = $(document).height;
+
+		}
+
+		function Scroll_Vegetable() {
+			var ouileft = $('#vagetable_1_ul').offset();
+			var timer = null;
+			var width = $('#vagetable_1_ul')[0].offsetWidth;
+
+			timer = setInterval(function () {
+
+				if(ouileft.left>=0){
+					speed = -2;
+				}
+				if(ouileft.left<-width/2){
+					speed = 2;
+				}
+				$('#vagetable_1_ul').css('left',ouileft.left+speed+'px');
+				//alert($('#vagetable_1_ul').css('left',ouileft.left+speed+'px').value);
+			},30);
+		};
+	</script>
+</body>
+</html>
